@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int qty = sc.nextInt();
+        double price = sc.nextDouble();
+
+        double total = qty * price;
+        double gst = total * 0.18;
+        double bill = total + gst;
+
+        System.out.println("Total: " + total);
+        System.out.println("GST: " + gst);
+        System.out.println("Final Bill: " + bill);
+    }
+}
